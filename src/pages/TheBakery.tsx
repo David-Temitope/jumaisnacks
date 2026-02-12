@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import Choco from '../assets/choco.jpg';
+import Strawberry from '../assets/strawberry.jpg';
+import Creamy from '../assets/creamy.jpg';
 
 interface Product {
   id: number;
@@ -14,44 +17,44 @@ const products: Product[] = [
   {
     id: 1,
     name: "Midnight Velvet",
-    price: "£85.00",
+    price: "N850.00",
     category: "Signature Cakes",
     description: "Deep cocoa sponge with signature crimson cream cheese frosting.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCi7jX1-P0G2A4_u_V7l-z6H-v0yI9N-V8M-W_L-k6F-j1H-Z5O-y9J-k4G_H-Z5O-y9J-k4G",
+    image: Choco,
     badge: "BEST SELLER"
   },
   {
     id: 2,
     name: "Flora Collection",
-    price: "£42.00",
+    price: "N500.00",
     category: "Artisan Cupcakes",
     description: "Hand-piped floral cupcakes with infused botanical essences.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDi7jX2-P0G2A4_u_V7l-z6H-v0yI9N-V8M-W_L-k6F-j1H-Z5O-y9J-k4G_H-Z5O-y9J-k4G",
+    image: Strawberry,
     badge: "NEW FLAVOR"
   },
   {
     id: 3,
     name: "Glazed Brioche",
-    price: "£28.00",
+    price: "N800.00",
     category: "Brioche Donuts",
     description: "Cloud-like donuts with a crystal honey glaze and sea salt.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuEi7jX3-P0G2A4_u_V7l-z6H-v0yI9N-V8M-W_L-k6F-j1H-Z5O-y9J-k4G_H-Z5O-y9J-k4G"
+    image: Creamy
   },
   {
     id: 4,
     name: "Premium Chinchin",
-    price: "£15.00",
+    price: "N1500.00",
     category: "Premium Chinchin",
     description: "Traditional crunchy bites with a hint of nutmeg and vanilla.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuFi7jX4-P0G2A4_u_V7l-z6H-v0yI9N-V8M-W_L-k6F-j1H-Z5O-y9J-k4G_H-Z5O-y9J-k4G"
+    image: Strawberry
   },
   {
     id: 5,
     name: "Ivory Romance",
-    price: "£320.00",
+    price: "N3200.00",
     category: "Signature Cakes",
     description: "Tiered wedding masterpiece with white chocolate ganache.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuGi7jX5-P0G2A4_u_V7l-z6H-v0yI9N-V8M-W_L-k6F-j1H-Z5O-y9J-k4G_H-Z5O-y9J-k4G",
+    image: Choco,
     badge: "LIMITED EDITION"
   },
   {
@@ -60,7 +63,7 @@ const products: Product[] = [
     price: "£32.00",
     category: "Artisan Cupcakes",
     description: "Belgium dark chocolate cupcakes with molten centers.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuHi7jX6-P0G2A4_u_V7l-z6H-v0yI9N-V8M-W_L-k6F-j1H-Z5O-y9J-k4G_H-Z5O-y9J-k4G"
+    image: Creamy
   }
 ];
 
