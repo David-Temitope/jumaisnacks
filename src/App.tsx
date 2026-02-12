@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Home from './pages/Home';
 import BookChef from './pages/BookChef';
 import TheBakery from './pages/TheBakery';
 
@@ -34,7 +35,7 @@ function App() {
         </div>
 
         <Routes>
-          <Route path="/" element={<Navigate to="/bakery" replace />} />
+          <Route path="/" element={<Home />} />
           <Route path="/bakery" element={<TheBakery />} />
           <Route path="/book-chef" element={<BookChef />} />
         </Routes>
